@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Are you a gamer?</h1>
+            <p id="description">learn if you are a real gamer</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label class="label" id="name-label">Enter your Name</label>
+                <input id="name" class="input" type="text" placeholder="name" required="required">
+            </div>
+
+            <div class="form-group">
+                <label class="label" id="email-label">Enter your Email</label>
+                <input id="email" class="input" type="email" placeholder="Email" required="required">
+            </div>
+
+            <div class="form-group">
+                <label class="label" id="number-label">Enter your Age</label>
+                <input id="number" class="input" type="number" placeholder="Age" required="required" min="1" max="100">
+            </div>
+
+            <div class="form-group">
+                <label class="label">What describes you best?</label>
+                <select id="dropdown" class="input">
+                    <option>Student</potion>
+                    <option>Full time Job</potion>
+                    <option>Full time Learner</potion>
+                    <option>Prefer not to say</potion>
+                    <option>Other</potion>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="games">Do you play a lot of games</label>
+                <label><input id="games" name="games" type="radio" value="yes">Yes</input></label>
+                <label><input id="games" name="games" type="radio" value="Alittle">A little</input></label>
+                <label><input id="games" name="games" type="radio" value="no">No</input></label>
+            </div>
+
+            <div class="form-group">
+                <label class="label">Which of these games do you play?</label>
+
+                <label><input type="checkbox" value="League of Legends">League of Legends</input></label>
+
+                <label><input type="checkbox" value="Minecraft">Minecraft</input></label>
+
+                <label><input type="checkbox" value="CS:GO">CS:GO</input></label>
+
+                <label><input type="checkbox" value="Vampyr">Vampyr</input></label>
+
+                <label><input type="checkbox" value="Dead By Daylight">Dead By Daylight</input></label>
+
+                <label><input type="checkbox" value="FoRtNiTe">FoRtNiTe</input></label>
+
+                <label><input type="checkbox" value="Other">Other</input><input type="text"> </input></label>
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="epicness">Do you think you are good at the games you play?</label>
+
+                <label><input type="radio" name="epicness" value="Yes"></input>Yes</label>
+                <label><input type="radio" name="epicness" value="imOkay"></input>Im okay</label>
+                <label><input type="radio" name="epicness" value="No"></input>No</label>
+            </div>
+
+            <div class="form-group">
+                <label class="label">comments</label>
+
+                <textarea></textarea>
+
+                <button id="submit">Done</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
